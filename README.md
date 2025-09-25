@@ -7,14 +7,14 @@ Bu proje, derin öğrenme yöntemleriyle bitki yapraklarındaki hastalıkları v
 ## 📊 Veri Seti Hakkında
 
 - **Kaynak:** Kaggle üzerinden [Leaf Disease Dataset](https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset) kullanılmıştır.
-- **Sınıflar:** Toplamda 4 farklı sınıf bulunmaktadır. Veri seti Blight sınıfı 1146 Common_Rust 1306 Gray_Leaf_Spot 574 Healthy 1162 adet olmak üzere toplamda 4188 adet görselden oluşmaktadır.
-- **Önişleme:** Resimler yeniden boyutlandırılmış ve normalize edilmiştir.
+- **Sınıflar:** Toplamda 4 farklı sınıf bulunmaktadır. Veri seti; Blight sınıfı 1146, Common_Rust 1306, Gray_Leaf_Spot 574, Healthy 1162 adet olmak üzere toplamda 4188 adet görselden oluşmaktadır.
+- **Ön İşleme:** Resimler yeniden boyutlandırılmış ve normalize edilmiştir.
 - **Veri Çoğaltma:** Resim döndürme, yatay ve dikey çevirme gibi tekniklerle veri artırımı yapılmıştır.
 - **Veri Paylaştırma:** Veriler train, validation ve test olmak üzere 3 ayrı parçaya bölünmüştür.
 
 ## ⚙️ Kullanılan Yöntemler
 
-- **Model:** Evrişimsel Sinir Ağları (CNN) mimarisi kullanılmıştır.    
+- **Model:** Evrişimsel Sinir Ağları (CNN) mimarisi ile oluşturulmuştur.    
 - **Eğitim:** Model, 20 epoch boyunca eğitilmiştir.  
 - **Değerlendirme:** Modelin başarımı accuracy, precision, recall ve f1-score metrikleri ile değerlendirilmiştir.
 - **Augmentation Tekniği:** Görseller üstünde değişiklik yapabilmek için "ImageDataGenerator" kullanılmıştır.
@@ -29,8 +29,8 @@ Bu proje, derin öğrenme yöntemleriyle bitki yapraklarındaki hastalıkları v
 - **En İyi Test Kaybı:** 0.2420
 - **Karmaşıklık Matrisi:** Modelin sınıflandırma başarısını gösteren karmaşık matris görselleştirilmiştir.
 - **Accuracy-Loss Grafiği:** Model eğitilirken çıkan sonuçlara göre acc-val_acc ve loss-val_loss değerlerinin değişimi gösterilir.
-- **Augmentation Deney:** Train datasına augmentation uyguladıktan sonra örnek yazdırma.
-- **Heatmap Görselleştirme:** Modelin karar alırken görseller üzerinde hangi bölgelere baktığı Grad-CAM kullanılarak heatmap görselleştirmesi yapılmıştır.
+- **Augmentation Test Etme:** Train datasına augmentation uyguladıktan sonra örnek yazdırma.
+- **Heatmap Görselleştirme:** Modelin karar alırken görseller üzerinde hangi bölgelere baktığı Grad-CAM kullanılarak haritası oluşturulmuş ve heatmap görselleştirmesi yapılmıştır.
 - **Hiperparametre Optimizasyonu:** Model eğitilirken 2 farklı dropout oranı denenerek farklı sonuçlar elde edilmiştir.
 
 ## 🚀 Nasıl Çalıştırılır
