@@ -1,3 +1,1 @@
-Need to be installed packages:
-
-!pip install tf-keras-vis
+tf-keras-vis
