@@ -40,7 +40,7 @@ Bu proje, derin öğrenme yöntemleriyle bitki yapraklarındaki hastalıkları v
    pip install -r requirements.txt
 
 2. **Notebook Çalıştırma:**
-   - `leaf_disease_classification.ipynb` dosyasını açın.
+   - `leaf-disease-classification.ipynb` dosyasını açın.
 
 3. **Model Eğitimi**
    - Notebook içerisindeki hücreleri sırasıyla çalıştırarak model eğitimini başlatın.
